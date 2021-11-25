@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>Weather Dashboard</header>
+
+    <!-- Search Form -->
+    <form class="searchform" id="search-form">
+        <h1 class="prompt">Search for a City:</h1></br>
+        <input type="search" class="searchbar" id="search-box"></br></br>
+        <button class="searchbutton" id="searchBtn">Search</button>
+    </form>
+    <!-- Search Form Ends -->
+
+    <!-- History container - this is hidden until user starts entering cities -->
+    <div class="history-container" id="history"></div>
+    <!-- History Container Ends -->
+
+    <!-- Search Results Container - this is hidden until user searches a city -->
+    <div class="searchdisplay" id="search-display"></div>
+    <!-- Search Results Container Ends -->
+
+    <!-- Forecase Section - this is hidden until user searches a city -->
+    <div class="forecast-cards" id="forecast"></div>
+    <!-- Forecase Section Ends -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
