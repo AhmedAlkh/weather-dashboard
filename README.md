@@ -1,4 +1,4 @@
 # weather-dashboard
 
 ## Notes
-Create div in JS for search history section
+Make API Key variable

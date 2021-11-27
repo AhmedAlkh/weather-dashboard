@@ -31,7 +31,7 @@ main form label {
     font-size: 25px;
 }
 
-.searchform {
+.searchForm {
     display: flex;
     flex-flow: column nowrap;
     margin-left: 20px;
@@ -68,8 +68,8 @@ main form label {
 /* Search form styling ends*/
 
 /* Forecast Section */
-.forecast {
+/* .forecast {
     display: none;
-}
+} */
 /* Forecast Section Ends */
 
