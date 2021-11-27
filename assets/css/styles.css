@@ -9,38 +9,67 @@ body {
     font-weight: bold;
 }
 
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
 header {
-    background-color: blue;
+    width: 100%;
+    height: 65px;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
+    padding-top: 5px;
+    background-image: linear-gradient(to right, #5699d2, #161D4C);
 }
 
 /* Search form styling */
-.prompt {
+main form label {
+    font-weight: bolder;
     font-size: 25px;
 }
 
 .searchform {
+    display: flex;
+    flex-flow: column nowrap;
     margin-left: 20px;
     margin-top: 20px;
 }
 
 .searchbar {
-    display: inline-block;
-    height: 30px;
-    width: 208px;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .searchbutton {
-    display: inline-block;
     height: 30px;
-    width: 208px;
+    width: 100%;
+    background-color: #60A3D9;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+}
+
+.searchbutton:hover {
+    background-image: linear-gradient(to right, #5699d2, #161D4C);
+}
+
+#search-history {
+    margin-top: 5px;
+    border-top: solid 2px black;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 /* Search form styling ends*/
 
-/* History container - this is hidden until user starts entering cities */
-.history-container {
+/* Forecast Section */
+.forecast {
     display: none;
 }
-/* History container ends */
+/* Forecast Section Ends */
+
