@@ -16,7 +16,6 @@
 <body>
     <!-- Header -->
     <header>Weather Dashboard</header>
-
     <!-- Main Section -->
     <main>
         <div class="row">
@@ -24,34 +23,34 @@
                 <!-- Search Form -->        
                 <form class="searchForm">
                     <label for="#searchbar">Search for a City:</label>
-                    <input class="searchbar" id="searchbar" placeholder="San Diego" value = "Toronto"> <!-- todo: remove Toronto -->
+                    <input class="searchbar" id="searchbar" placeholder="Toronto">
                     <button type="submit" class="searchbutton" id="searchBtn">Search</button>
-                    <div id="search-history"></div>
-                </form>
+                    <hr/>
+                    <div id="searchHistory"></div>
+                </form>    
                 <!-- Search Form Ends -->
             </div>
             <div class="col-8">
             <!-- Forecase Section - this is hidden until user searches a city -->
-                <div class="forecast">
+                <div class="forecast hide" id = "forecast">
                     <div class="current-conditions">    
                         <h2 id="currentCityName" class=""></h2>
                         <div>
-                            <span class="current-condition-label">Temp:</span><span id = "currentTemp" class = "current-condition-value">32deg</span>
+                            <span class="current-condition-label">Temp:</span><span id = "currentTemp" class = "current-condition-value"></span>
                         </div>
                         <div>
-                            <span class="current-condition-label">Wind:</span><span id = "currentWind" class = "current-condition-value">32deg</span>
+                            <span class="current-condition-label">Wind:</span><span id = "currentWind" class = "current-condition-value"></span>
                         </div>
                         <div>
-                            <span class="current-condition-label">Humidity:</span><span id = "currentHumidity" class = "current-condition-value">32deg</span>
+                            <span class="current-condition-label">Humidity:</span><span id = "currentHumidity" class = "current-condition-value"></span>
                         </div>
                         <div>
-                            <span class="current-condition-label">UV Index:</span><span id = "currentUVIndex" class = "current-condition-value">32deg</span>
+                            <span class="current-condition-label">UV Index:</span><span id = "currentUVIndex" class = "current-condition-value"></span>
                         </div>                                
                     </div>
                     <h2 class="subtitle">5-Day Forecast:
                         <div class = "row" id = "fiveDayForecast"> 
-                            
-
+                            <!-- 5 day forecast cards will go here-->
                         </div>
                     </h2>
                     <div class="row future-conditions"></div>
